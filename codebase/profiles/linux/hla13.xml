@@ -90,7 +90,7 @@
 			<includepath path="${cppunit.include}"/>
 			<define name="RTI_USES_STD_FSTREAM"/>
 			<define name="DEBUG"/>
-			<library path="${hla13.complete.dir}/gcc8" libs="RTI-NG64d,FedTime64d"/>
+			<library path="${hla13.complete.dir}/gcc8" libs="RTI-NG_64d,FedTime_64d"/>
 			<library path="${cppunit.lib}" libs="cppunit"/>
 		</cpptask>
 	</target>

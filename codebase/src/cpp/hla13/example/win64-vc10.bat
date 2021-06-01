@@ -40,7 +40,7 @@ goto finish
 ############################################
 :compile
 echo Compiling example federate
-cl /I"%RTI_HOME%\include\hla13" /DRTI_USES_STD_FSTREAM /EHsc main.cpp ExampleCPPFederate.cpp ExampleFedAmb.cpp "%RTI_HOME%\lib\vc10\libRTI-NG64.lib" "%RTI_HOME%\lib\vc10\libFedTime64.lib"
+cl /I"%RTI_HOME%\include\hla13" /DRTI_USES_STD_FSTREAM /EHsc main.cpp ExampleCPPFederate.cpp ExampleFedAmb.cpp "%RTI_HOME%\lib\vc10\libRTI-NG_64.lib" "%RTI_HOME%\lib\vc10\libFedTime_64.lib"
 goto finish
 
 ############################################

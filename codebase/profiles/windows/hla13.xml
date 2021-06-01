@@ -205,7 +205,7 @@
 			<includepath path="${cppunit.include}"/>
 			<define name="RTI_USES_STD_FSTREAM"/>
 			<define name="DEBUG"/>
-			<library path="${hla13.complete.dir}/vc14_1" libs="RTI-NG64d,FedTime64d"/>
+			<library path="${hla13.complete.dir}/vc14_1" libs="RTI-NG_64d,FedTime_64d"/>
 			<library path="${cppunit.dir}/win64/vc14_1" libs="cppunit"/>
 		</cpptask>
 	</target>

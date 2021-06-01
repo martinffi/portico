@@ -445,7 +445,7 @@ pair<string,string> Runtime::generateUnixPath( string rtihome ) throw( RTIintern
 	#endif
 
 	// make sure we have a system path
-	if( !systemPath )
+	if( systemPath.empty() )
 		systemPath = "";
 
 	// Set to JAVA_HOME as a fallback -- only used when we're in development environments really.

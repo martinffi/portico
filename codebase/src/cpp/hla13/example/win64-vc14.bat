@@ -44,7 +44,7 @@ echo Compiling example federate
 rem comment out this line or edit if using different visual studio command prompt 
 call "C:\Program Files (x86)\Microsoft Visual Studio\2017\Professional\Common7\Tools\VsDevCmd" %-arch=amd64
 
-cl /I"%RTI_HOME%\include\hla13" /DRTI_USES_STD_FSTREAM /EHsc main.cpp ExampleCPPFederate.cpp ExampleFedAmb.cpp "%RTI_HOME%\lib\vc14_1\libRTI-NG64.lib" "%RTI_HOME%\lib\vc14_1\libFedTime64.lib"
+cl /I"%RTI_HOME%\include\hla13" /DRTI_USES_STD_FSTREAM /EHsc main.cpp ExampleCPPFederate.cpp ExampleFedAmb.cpp "%RTI_HOME%\lib\vc14_1\libRTI-NG_64.lib" "%RTI_HOME%\lib\vc14_1\libFedTime_64.lib"
 goto finish
 
 ############################################

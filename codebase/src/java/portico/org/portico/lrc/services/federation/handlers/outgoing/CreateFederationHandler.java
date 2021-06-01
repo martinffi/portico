@@ -67,7 +67,11 @@ public class CreateFederationHandler extends LRCMessageHandler
 		// -- NOT DONE ANY MORE --
 		// Used to be important, but we will manually insert the MOM with handles we can control
 		// check to make sure we have the standard MIM as well - if not, load it
-		// validateStandardMimPresent( foms );
+		
+		// the MIM is back baby!
+		// idk why this is needed - something to do with the privilege to delete attribute in 1516e
+		// TODO find out why this is needed again / if there is something else that should be done
+		validateStandardMimPresent( foms );
 
 		// merge the modules together
 		ObjectModel combinedFOM = ModelMerger.merge( foms );

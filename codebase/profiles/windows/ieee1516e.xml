@@ -109,7 +109,7 @@
 	     We have one of these for each supported platform architecture so
 		 that we can compile all the targets for each arch as a group.
 	-->
-	<target name="compile.vc14_1" extensionOf="ieee1516e.compile">
+	<target name="ieee1516e.compile.vc14_1" extensionOf="ieee1516e.compile">
 		<trycatch>
 		<try>
 			<compile-ieee1516e compiler="vc14_1" arch="amd64" build="debug"/>
@@ -186,7 +186,7 @@
 	<!-- Compiles the 1516e example federate. Doesn't do much except
 	     assure that we can actually compile and link it to Portico.
 		 Only validates this with the latest supported compiler. -->
-	<target name="example.compile.amd64" depends="compile.vc14_1" if="vc14_1.amd64.debug">
+	<target name="example.compile.amd64" depends="ieee1516e.compile.vc14_1">
 		<cpptask outfile="ieee1516e-example"
 		      workdir="${ieee1516e.build.dir}/ieee1516e-example"
 		      type="executable"
