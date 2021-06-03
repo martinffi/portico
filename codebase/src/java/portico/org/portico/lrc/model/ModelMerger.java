@@ -304,7 +304,7 @@ public class ModelMerger
 		//////////////////////////////////
 		// check to see if there are any types in the extension that can be inserted into the base
 		// take copy of the set to avoid concurrent modificiation exceptions if we extend the model
-		Set<ICMetadata> extensionChildren = new HashSet<ICMetadata>( extension.getChildTypes() );
+		Set<ICMetadata> extensionChildren = new TreeSet<ICMetadata>( extension.getChildTypes() );
 		for( ICMetadata extensionChild : extensionChildren )
 		{
 			// if the child does not exist in the base model, insert it, otherwise we need to

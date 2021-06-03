@@ -365,7 +365,6 @@ public class ObjectModel implements Serializable
 		if( metadata == null )
 		{
 			// couldn't find it, return the dud
-			System.out.println("invalid handle " + name );
 			return INVALID_HANDLE;
 		}
 		else
