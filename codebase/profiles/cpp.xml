@@ -45,7 +45,7 @@
 	<extension-point name="cpp.clean"   extensionOf="master.clean"/>
 	<extension-point name="cpp.compile" extensionOf="master.compile" description="Compile all C++ interfaces and tests"/>
 	<extension-point name="cpp.test"    extensionOf="master.test"/>
-	<extension-point name="cpp.sandbox" extensionOf="master.sandbox"/>
+	<extension-point name="cpp.sandbox" extensionOf="master.sandbox" depends="java.sandbox.jre"/>
 	<extension-point name="cpp.32.installer" extensionOf="master.32.installer"/>
 
 	<!-- ================================================= -->
