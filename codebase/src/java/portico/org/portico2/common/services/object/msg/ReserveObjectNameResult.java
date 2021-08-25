@@ -46,6 +46,13 @@ public class ReserveObjectNameResult extends PorticoMessage implements Externali
 		this.objectName = objectName;
 		this.successful = successful;
 	}
+
+	public ReserveObjectNameResult()
+	{
+		super();
+		this.objectName = null;
+		this.successful = false;
+	}
 	
 	//----------------------------------------------------------
 	//                    INSTANCE METHODS
